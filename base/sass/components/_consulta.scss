@@ -1,0 +1,78 @@
+@use "../abstracts/abstracts" as *;
+.consulta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 16px;
+  background-color: #f8f8f8;
+  @include breakpoint("tablet") {
+    flex-direction: row;
+  }
+
+  &__informacion {
+    background-color: $darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 16px;
+    color: $white;
+    text-align: center;
+    gap: 30px;
+    @include breakpoint("tablet") {
+      width: 50vw;
+      height: 444px;
+      padding: 32px 64px;
+    }
+    @include breakpoint("desktop") {
+      width: 70vw;
+      height: 444px;
+      padding: 32px 64px;
+    }
+    h3 {
+      font-family: poppins, sans-serif;
+      font-size: 36px;
+      font-weight: 900;
+      text-align: center;
+      span {
+        color: $blue;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      line-height: 1.5;
+      span {
+        font-weight: 900;
+      }
+    }
+    a.btn {
+      display: inline-block;
+      width: 100%;
+      font-family: poppins, sans-serif;
+      font-size: 18px;
+      color: #11d8ff;
+      text-decoration: none;
+      padding: 18px 38px;
+      border: 1px solid #11d8ff;
+      border-radius: 48px;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    @include breakpoint("tablet") {
+      width: 50vw;
+      height: 444px;
+    }
+    @include breakpoint("desktop") {
+      width: 30vw;
+      height: 444px;
+    }
+  }
+}

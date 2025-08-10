@@ -1,0 +1,51 @@
+@use "../abstracts/abstracts" as *;
+.estadisticas {
+  background-image: linear-gradient(48deg, $green, $blue);
+  padding: 40px 16px;
+  h2 {
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @include breakpoint("tablet") {
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    @include breakpoint("tablet") {
+      width: 25%;
+    }
+    h3 {
+      font-family: poppins, sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.2;
+      color: white;
+    }
+    p {
+      font-family: poppins, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: white;
+      text-align: center;
+    }
+  }
+}
