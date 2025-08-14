@@ -106,8 +106,10 @@ header {
           font-weight: 500;
 
           &:hover {
-            background-color: $darkgrey;
-            color: $white;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-color: $darkgrey;
+
           }
         }
       }
